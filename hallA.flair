@@ -2,64 +2,68 @@
 # FLUKA Project file
 Version: 2
 Title: HallA
-Input: HallA.inp
-Exec: moller.exe
+Input: HallA-PREX_run.inp
+Exec: prex.exe
 Submit: *Default
 Notes:
 {img:MOLLER-hallA_plot05.png}
 Tabs: 0.1 0.32 0.56 0.81 1.0
 Page: Flair
-Source: Magnetic_field/magfld_test7.f
+Source: Source/source_ea_double_new.f
+Source: MagneticField/magfld_prex.f
 DefMain: True
-LinkPrg: lfluka
+LinkPrg: ldpmqmd
 F77bound: True
 F77dline: False
 
 # Run information
 Run: <default>
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
 	StartRun: 1553894715
-	Family:  MOLLER-hallA_aa MOLLER-hallA_ab MOLLER-hallA_ac MOLLER-hallA_ad MOLLER-hallA_ae MOLLER-hallA_af MOLLER-hallA_ag MOLLER-hallA_ah MOLLER-hallA_ai MOLLER-hallA_aj MOLLER-hallA_ak MOLLER-hallA_al MOLLER-hallA_am MOLLER-hallA_an MOLLER-hallA_ao MOLLER-hallA_ap MOLLER-hallA_aq MOLLER-hallA_ar MOLLER-hallA_as MOLLER-hallA_at MOLLER-hallA_au MOLLER-hallA_av MOLLER-hallA_aw MOLLER-hallA_ax MOLLER-hallA_ay MOLLER-hallA_az MOLLER-hallA_ba MOLLER-hallA_bb MOLLER-hallA_bc MOLLER-hallA_bd
+	Family:  HallA-PREX_run_aa HallA-PREX_run_ab HallA-PREX_run_ac HallA-PREX_run_ad HallA-PREX_run_ae HallA-PREX_run_af HallA-PREX_run_ag HallA-PREX_run_ah HallA-PREX_run_ai HallA-PREX_run_aj HallA-PREX_run_ak HallA-PREX_run_al HallA-PREX_run_am HallA-PREX_run_an HallA-PREX_run_ao HallA-PREX_run_ap HallA-PREX_run_aq HallA-PREX_run_ar HallA-PREX_run_as HallA-PREX_run_at HallA-PREX_run_au HallA-PREX_run_av HallA-PREX_run_aw HallA-PREX_run_ax HallA-PREX_run_ay HallA-PREX_run_az HallA-PREX_run_ba HallA-PREX_run_bb HallA-PREX_run_bc HallA-PREX_run_bd
 
-	# USRxxx data file: HallA_50.bnn
+	# USRxxx data file: HallA-PREX_run_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,HallA-PREX_run_ba001_fort.50
 	End
 
-	# USRxxx data file: HallA_51.bnn
+	# USRxxx data file: HallA-PREX_run_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,HallA-PREX_run_ba001_fort.51
 	End
 
-	# USRxxx data file: HallA_52.bnn
+	# USRxxx data file: HallA-PREX_run_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,HallA-PREX_run_ba001_fort.52
 	End
 End
 
 # Run information
-Run: MOLLER-hallA_aa
+Run: HallA-PREX_run_aa
 	Rnd:      22
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752827
+	StartRun: 1580506787
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_aa_50.bnn
+	# USRxxx data file: HallA-PREX_run_aa_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -67,7 +71,7 @@ Run: MOLLER-hallA_aa
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_aa_51.bnn
+	# USRxxx data file: HallA-PREX_run_aa_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -75,7 +79,7 @@ Run: MOLLER-hallA_aa
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_aa_52.bnn
+	# USRxxx data file: HallA-PREX_run_aa_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -85,16 +89,16 @@ Run: MOLLER-hallA_aa
 End
 
 # Run information
-Run: MOLLER-hallA_ab
+Run: HallA-PREX_run_ab
 	Rnd:      23
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752827
+	StartRun: 1580506787
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ab_50.bnn
+	# USRxxx data file: HallA-PREX_run_ab_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -102,7 +106,7 @@ Run: MOLLER-hallA_ab
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ab_51.bnn
+	# USRxxx data file: HallA-PREX_run_ab_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -110,7 +114,7 @@ Run: MOLLER-hallA_ab
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ab_52.bnn
+	# USRxxx data file: HallA-PREX_run_ab_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -120,16 +124,16 @@ Run: MOLLER-hallA_ab
 End
 
 # Run information
-Run: MOLLER-hallA_ac
+Run: HallA-PREX_run_ac
 	Rnd:      24
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752827
+	StartRun: 1580506787
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ac_50.bnn
+	# USRxxx data file: HallA-PREX_run_ac_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -137,7 +141,7 @@ Run: MOLLER-hallA_ac
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ac_51.bnn
+	# USRxxx data file: HallA-PREX_run_ac_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -145,7 +149,7 @@ Run: MOLLER-hallA_ac
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ac_52.bnn
+	# USRxxx data file: HallA-PREX_run_ac_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -155,16 +159,16 @@ Run: MOLLER-hallA_ac
 End
 
 # Run information
-Run: MOLLER-hallA_ad
+Run: HallA-PREX_run_ad
 	Rnd:      25
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752827
+	StartRun: 1580506787
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ad_50.bnn
+	# USRxxx data file: HallA-PREX_run_ad_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -172,7 +176,7 @@ Run: MOLLER-hallA_ad
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ad_51.bnn
+	# USRxxx data file: HallA-PREX_run_ad_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -180,7 +184,7 @@ Run: MOLLER-hallA_ad
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ad_52.bnn
+	# USRxxx data file: HallA-PREX_run_ad_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -190,16 +194,16 @@ Run: MOLLER-hallA_ad
 End
 
 # Run information
-Run: MOLLER-hallA_ae
+Run: HallA-PREX_run_ae
 	Rnd:      26
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752828
+	StartRun: 1580506787
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ae_50.bnn
+	# USRxxx data file: HallA-PREX_run_ae_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -207,7 +211,7 @@ Run: MOLLER-hallA_ae
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ae_51.bnn
+	# USRxxx data file: HallA-PREX_run_ae_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -215,7 +219,7 @@ Run: MOLLER-hallA_ae
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ae_52.bnn
+	# USRxxx data file: HallA-PREX_run_ae_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -225,16 +229,16 @@ Run: MOLLER-hallA_ae
 End
 
 # Run information
-Run: MOLLER-hallA_af
+Run: HallA-PREX_run_af
 	Rnd:      27
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752828
+	StartRun: 1580506787
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_af_50.bnn
+	# USRxxx data file: HallA-PREX_run_af_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -242,7 +246,7 @@ Run: MOLLER-hallA_af
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_af_51.bnn
+	# USRxxx data file: HallA-PREX_run_af_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -250,7 +254,7 @@ Run: MOLLER-hallA_af
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_af_52.bnn
+	# USRxxx data file: HallA-PREX_run_af_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -260,16 +264,16 @@ Run: MOLLER-hallA_af
 End
 
 # Run information
-Run: MOLLER-hallA_ag
+Run: HallA-PREX_run_ag
 	Rnd:      28
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752828
+	StartRun: 1580506787
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ag_50.bnn
+	# USRxxx data file: HallA-PREX_run_ag_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -277,7 +281,7 @@ Run: MOLLER-hallA_ag
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ag_51.bnn
+	# USRxxx data file: HallA-PREX_run_ag_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -285,7 +289,7 @@ Run: MOLLER-hallA_ag
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ag_52.bnn
+	# USRxxx data file: HallA-PREX_run_ag_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -295,16 +299,16 @@ Run: MOLLER-hallA_ag
 End
 
 # Run information
-Run: MOLLER-hallA_ah
+Run: HallA-PREX_run_ah
 	Rnd:      29
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752828
+	StartRun: 1580506787
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ah_50.bnn
+	# USRxxx data file: HallA-PREX_run_ah_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -312,7 +316,7 @@ Run: MOLLER-hallA_ah
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ah_51.bnn
+	# USRxxx data file: HallA-PREX_run_ah_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -320,7 +324,7 @@ Run: MOLLER-hallA_ah
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ah_52.bnn
+	# USRxxx data file: HallA-PREX_run_ah_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -330,16 +334,16 @@ Run: MOLLER-hallA_ah
 End
 
 # Run information
-Run: MOLLER-hallA_ai
+Run: HallA-PREX_run_ai
 	Rnd:      30
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752828
+	StartRun: 1580506788
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ai_50.bnn
+	# USRxxx data file: HallA-PREX_run_ai_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -347,7 +351,7 @@ Run: MOLLER-hallA_ai
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ai_51.bnn
+	# USRxxx data file: HallA-PREX_run_ai_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -355,7 +359,7 @@ Run: MOLLER-hallA_ai
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ai_52.bnn
+	# USRxxx data file: HallA-PREX_run_ai_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -365,16 +369,16 @@ Run: MOLLER-hallA_ai
 End
 
 # Run information
-Run: MOLLER-hallA_aj
+Run: HallA-PREX_run_aj
 	Rnd:      31
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752828
+	StartRun: 1580506788
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_aj_50.bnn
+	# USRxxx data file: HallA-PREX_run_aj_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -382,7 +386,7 @@ Run: MOLLER-hallA_aj
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_aj_51.bnn
+	# USRxxx data file: HallA-PREX_run_aj_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -390,7 +394,7 @@ Run: MOLLER-hallA_aj
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_aj_52.bnn
+	# USRxxx data file: HallA-PREX_run_aj_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -400,16 +404,16 @@ Run: MOLLER-hallA_aj
 End
 
 # Run information
-Run: MOLLER-hallA_ak
+Run: HallA-PREX_run_ak
 	Rnd:      32
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752828
+	StartRun: 1580506788
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ak_50.bnn
+	# USRxxx data file: HallA-PREX_run_ak_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -417,7 +421,7 @@ Run: MOLLER-hallA_ak
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ak_51.bnn
+	# USRxxx data file: HallA-PREX_run_ak_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -425,7 +429,7 @@ Run: MOLLER-hallA_ak
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ak_52.bnn
+	# USRxxx data file: HallA-PREX_run_ak_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -435,16 +439,16 @@ Run: MOLLER-hallA_ak
 End
 
 # Run information
-Run: MOLLER-hallA_al
+Run: HallA-PREX_run_al
 	Rnd:      33
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752828
+	StartRun: 1580506788
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_al_50.bnn
+	# USRxxx data file: HallA-PREX_run_al_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -452,7 +456,7 @@ Run: MOLLER-hallA_al
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_al_51.bnn
+	# USRxxx data file: HallA-PREX_run_al_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -460,7 +464,7 @@ Run: MOLLER-hallA_al
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_al_52.bnn
+	# USRxxx data file: HallA-PREX_run_al_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -470,16 +474,16 @@ Run: MOLLER-hallA_al
 End
 
 # Run information
-Run: MOLLER-hallA_am
+Run: HallA-PREX_run_am
 	Rnd:      34
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752828
+	StartRun: 1580506788
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_am_50.bnn
+	# USRxxx data file: HallA-PREX_run_am_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -487,7 +491,7 @@ Run: MOLLER-hallA_am
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_am_51.bnn
+	# USRxxx data file: HallA-PREX_run_am_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -495,7 +499,7 @@ Run: MOLLER-hallA_am
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_am_52.bnn
+	# USRxxx data file: HallA-PREX_run_am_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -505,16 +509,16 @@ Run: MOLLER-hallA_am
 End
 
 # Run information
-Run: MOLLER-hallA_an
+Run: HallA-PREX_run_an
 	Rnd:      35
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752829
+	StartRun: 1580506788
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_an_50.bnn
+	# USRxxx data file: HallA-PREX_run_an_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -522,7 +526,7 @@ Run: MOLLER-hallA_an
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_an_51.bnn
+	# USRxxx data file: HallA-PREX_run_an_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -530,7 +534,7 @@ Run: MOLLER-hallA_an
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_an_52.bnn
+	# USRxxx data file: HallA-PREX_run_an_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -540,16 +544,16 @@ Run: MOLLER-hallA_an
 End
 
 # Run information
-Run: MOLLER-hallA_ao
+Run: HallA-PREX_run_ao
 	Rnd:      36
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752829
+	StartRun: 1580506788
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ao_50.bnn
+	# USRxxx data file: HallA-PREX_run_ao_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -557,7 +561,7 @@ Run: MOLLER-hallA_ao
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ao_51.bnn
+	# USRxxx data file: HallA-PREX_run_ao_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -565,7 +569,7 @@ Run: MOLLER-hallA_ao
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ao_52.bnn
+	# USRxxx data file: HallA-PREX_run_ao_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -575,16 +579,16 @@ Run: MOLLER-hallA_ao
 End
 
 # Run information
-Run: MOLLER-hallA_ap
+Run: HallA-PREX_run_ap
 	Rnd:      37
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752829
+	StartRun: 1580506789
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ap_50.bnn
+	# USRxxx data file: HallA-PREX_run_ap_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -592,7 +596,7 @@ Run: MOLLER-hallA_ap
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ap_51.bnn
+	# USRxxx data file: HallA-PREX_run_ap_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -600,7 +604,7 @@ Run: MOLLER-hallA_ap
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ap_52.bnn
+	# USRxxx data file: HallA-PREX_run_ap_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -610,16 +614,16 @@ Run: MOLLER-hallA_ap
 End
 
 # Run information
-Run: MOLLER-hallA_aq
+Run: HallA-PREX_run_aq
 	Rnd:      38
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752829
+	StartRun: 1580506789
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_aq_50.bnn
+	# USRxxx data file: HallA-PREX_run_aq_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -627,7 +631,7 @@ Run: MOLLER-hallA_aq
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_aq_51.bnn
+	# USRxxx data file: HallA-PREX_run_aq_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -635,7 +639,7 @@ Run: MOLLER-hallA_aq
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_aq_52.bnn
+	# USRxxx data file: HallA-PREX_run_aq_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -645,16 +649,16 @@ Run: MOLLER-hallA_aq
 End
 
 # Run information
-Run: MOLLER-hallA_ar
+Run: HallA-PREX_run_ar
 	Rnd:      39
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752829
+	StartRun: 1580506789
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ar_50.bnn
+	# USRxxx data file: HallA-PREX_run_ar_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -662,7 +666,7 @@ Run: MOLLER-hallA_ar
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ar_51.bnn
+	# USRxxx data file: HallA-PREX_run_ar_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -670,7 +674,7 @@ Run: MOLLER-hallA_ar
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ar_52.bnn
+	# USRxxx data file: HallA-PREX_run_ar_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -680,16 +684,16 @@ Run: MOLLER-hallA_ar
 End
 
 # Run information
-Run: MOLLER-hallA_as
+Run: HallA-PREX_run_as
 	Rnd:      40
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752829
+	StartRun: 1580506789
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_as_50.bnn
+	# USRxxx data file: HallA-PREX_run_as_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -697,7 +701,7 @@ Run: MOLLER-hallA_as
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_as_51.bnn
+	# USRxxx data file: HallA-PREX_run_as_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -705,7 +709,7 @@ Run: MOLLER-hallA_as
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_as_52.bnn
+	# USRxxx data file: HallA-PREX_run_as_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -715,16 +719,16 @@ Run: MOLLER-hallA_as
 End
 
 # Run information
-Run: MOLLER-hallA_at
+Run: HallA-PREX_run_at
 	Rnd:      41
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752829
+	StartRun: 1580506789
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_at_50.bnn
+	# USRxxx data file: HallA-PREX_run_at_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -732,7 +736,7 @@ Run: MOLLER-hallA_at
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_at_51.bnn
+	# USRxxx data file: HallA-PREX_run_at_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -740,7 +744,7 @@ Run: MOLLER-hallA_at
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_at_52.bnn
+	# USRxxx data file: HallA-PREX_run_at_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -750,16 +754,16 @@ Run: MOLLER-hallA_at
 End
 
 # Run information
-Run: MOLLER-hallA_au
+Run: HallA-PREX_run_au
 	Rnd:      42
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752829
+	StartRun: 1580506789
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_au_50.bnn
+	# USRxxx data file: HallA-PREX_run_au_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -767,7 +771,7 @@ Run: MOLLER-hallA_au
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_au_51.bnn
+	# USRxxx data file: HallA-PREX_run_au_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -775,7 +779,7 @@ Run: MOLLER-hallA_au
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_au_52.bnn
+	# USRxxx data file: HallA-PREX_run_au_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -785,16 +789,16 @@ Run: MOLLER-hallA_au
 End
 
 # Run information
-Run: MOLLER-hallA_av
+Run: HallA-PREX_run_av
 	Rnd:      43
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752829
+	StartRun: 1580506790
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_av_50.bnn
+	# USRxxx data file: HallA-PREX_run_av_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -802,7 +806,7 @@ Run: MOLLER-hallA_av
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_av_51.bnn
+	# USRxxx data file: HallA-PREX_run_av_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -810,7 +814,7 @@ Run: MOLLER-hallA_av
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_av_52.bnn
+	# USRxxx data file: HallA-PREX_run_av_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -820,16 +824,16 @@ Run: MOLLER-hallA_av
 End
 
 # Run information
-Run: MOLLER-hallA_aw
+Run: HallA-PREX_run_aw
 	Rnd:      44
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752830
+	StartRun: 1580506790
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_aw_50.bnn
+	# USRxxx data file: HallA-PREX_run_aw_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -837,7 +841,7 @@ Run: MOLLER-hallA_aw
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_aw_51.bnn
+	# USRxxx data file: HallA-PREX_run_aw_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -845,7 +849,7 @@ Run: MOLLER-hallA_aw
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_aw_52.bnn
+	# USRxxx data file: HallA-PREX_run_aw_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -855,16 +859,16 @@ Run: MOLLER-hallA_aw
 End
 
 # Run information
-Run: MOLLER-hallA_ax
+Run: HallA-PREX_run_ax
 	Rnd:      45
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752830
+	StartRun: 1580506790
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ax_50.bnn
+	# USRxxx data file: HallA-PREX_run_ax_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -872,7 +876,7 @@ Run: MOLLER-hallA_ax
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ax_51.bnn
+	# USRxxx data file: HallA-PREX_run_ax_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -880,7 +884,7 @@ Run: MOLLER-hallA_ax
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ax_52.bnn
+	# USRxxx data file: HallA-PREX_run_ax_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -890,16 +894,16 @@ Run: MOLLER-hallA_ax
 End
 
 # Run information
-Run: MOLLER-hallA_ay
+Run: HallA-PREX_run_ay
 	Rnd:      46
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752830
+	StartRun: 1580506790
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ay_50.bnn
+	# USRxxx data file: HallA-PREX_run_ay_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -907,7 +911,7 @@ Run: MOLLER-hallA_ay
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ay_51.bnn
+	# USRxxx data file: HallA-PREX_run_ay_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -915,7 +919,7 @@ Run: MOLLER-hallA_ay
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ay_52.bnn
+	# USRxxx data file: HallA-PREX_run_ay_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -925,16 +929,16 @@ Run: MOLLER-hallA_ay
 End
 
 # Run information
-Run: MOLLER-hallA_az
+Run: HallA-PREX_run_az
 	Rnd:      47
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752830
+	StartRun: 1580506790
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_az_50.bnn
+	# USRxxx data file: HallA-PREX_run_az_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -942,7 +946,7 @@ Run: MOLLER-hallA_az
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_az_51.bnn
+	# USRxxx data file: HallA-PREX_run_az_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -950,7 +954,7 @@ Run: MOLLER-hallA_az
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_az_52.bnn
+	# USRxxx data file: HallA-PREX_run_az_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -960,51 +964,45 @@ Run: MOLLER-hallA_az
 End
 
 # Run information
-Run: MOLLER-hallA_ba
+Run: HallA-PREX_run_ba
 	Rnd:      48
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752830
+	StartRun: 1580506791
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_ba_50.bnn
+	# USRxxx data file: HallA-PREX_run_ba_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ba_51.bnn
+	# USRxxx data file: HallA-PREX_run_ba_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_ba_52.bnn
+	# USRxxx data file: HallA-PREX_run_ba_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
 	End
 End
 
 # Run information
-Run: MOLLER-hallA_bb
+Run: HallA-PREX_run_bb
 	Rnd:      49
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752830
+	StartRun: 1580506791
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_bb_50.bnn
+	# USRxxx data file: HallA-PREX_run_bb_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -1012,7 +1010,7 @@ Run: MOLLER-hallA_bb
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_bb_51.bnn
+	# USRxxx data file: HallA-PREX_run_bb_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -1020,7 +1018,7 @@ Run: MOLLER-hallA_bb
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_bb_52.bnn
+	# USRxxx data file: HallA-PREX_run_bb_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -1030,16 +1028,16 @@ Run: MOLLER-hallA_bb
 End
 
 # Run information
-Run: MOLLER-hallA_bc
+Run: HallA-PREX_run_bc
 	Rnd:      50
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752830
+	StartRun: 1580506791
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_bc_50.bnn
+	# USRxxx data file: HallA-PREX_run_bc_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -1047,7 +1045,7 @@ Run: MOLLER-hallA_bc
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_bc_51.bnn
+	# USRxxx data file: HallA-PREX_run_bc_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -1055,7 +1053,7 @@ Run: MOLLER-hallA_bc
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_bc_52.bnn
+	# USRxxx data file: HallA-PREX_run_bc_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -1065,16 +1063,16 @@ Run: MOLLER-hallA_bc
 End
 
 # Run information
-Run: MOLLER-hallA_bd
+Run: HallA-PREX_run_bd
 	Rnd:      51
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1554752831
+	StartRun: 1580506791
 	Parent:    <default>
 
-	# USRxxx data file: MOLLER-hallA_bd_50.bnn
+	# USRxxx data file: HallA-PREX_run_bd_50.bnn
 	Data: \I_\U.\e
 		Unit: 50
 		Type: b
@@ -1082,7 +1080,7 @@ Run: MOLLER-hallA_bd
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_bd_51.bnn
+	# USRxxx data file: HallA-PREX_run_bd_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
 		Type: b
@@ -1090,7 +1088,7 @@ Run: MOLLER-hallA_bd
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: MOLLER-hallA_bd_52.bnn
+	# USRxxx data file: HallA-PREX_run_bd_52.bnn
 	Data: \I_\U.\e
 		Unit: 52
 		Type: b
@@ -1100,9 +1098,9 @@ Run: MOLLER-hallA_bd
 End
 
 # Material
-Material: AL-6061
+Material: ZINC
 	alpha: 0
-	color: #309030
+	color: #1070B0
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -1140,6 +1138,16 @@ Material: SiO2
 End
 
 # Material
+Material: BORPOLY
+	alpha: 0
+	color: #905050
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
 Material: H-LIQUID
 	alpha: 0
 	color: #A070B0
@@ -1151,7 +1159,7 @@ End
 
 # Material
 Material: AIR1
-	alpha: 100
+	alpha: 99
 	color: #46a4f1
 	fuzz: 0.0
 	ior: 1.0
@@ -1161,7 +1169,7 @@ End
 
 # Material
 Material: AIR2
-	alpha: 100
+	alpha: 99
 	color: #46b8f1
 	fuzz: 0.0
 	ior: 1.0
@@ -1170,9 +1178,9 @@ Material: AIR2
 End
 
 # Material
-Material: AIR3
+Material: CW70
 	alpha: 0
-	color: #46ccf1
+	color: #807070
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -1200,9 +1208,9 @@ Material: AIR5
 End
 
 # Material
-Material: ZINC
+Material: AL-6061
 	alpha: 0
-	color: #1070B0
+	color: #309030
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -1223,6 +1231,36 @@ End
 Material: CW95
 	alpha: 0
 	color: #5090D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: Stainles
+	alpha: 0
+	color: #40D0D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: LEAD208
+	alpha: 0
+	color: #E0D0B0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: AIR3
+	alpha: 0
+	color: #46ccf1
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -1262,8 +1300,8 @@ End
 # Geometry Information
 Geometry:
 	Frame.bsplit: 0.5
-	Frame.tsplit: 0.5
-	Frame.vsplit: 0.5
+	Frame.tsplit: 0.99
+	Frame.vsplit: 0.99
 
 	# Layer
 	Layer: Media
@@ -1293,6 +1331,8 @@ Geometry:
 
 	# Layer
 	Layer: 3D
+		: True
+		._visible: True
 		3D: True
 		3D._visible: True
 		3D.edgedetect: 1
@@ -1310,36 +1350,39 @@ Geometry:
 		Options.shortcut: F4
 		Options.viewport: 0
 		Palette._visible: True
-		Palette.alphamax: 0
 		Palette.alphamin: 1
 		Palette.cpd: 5
-		Palette.inv: 0
-		Palette.log: 1
 		Palette.max: 1e+19
 		Palette.min: 100000.0
 		Palette.n: 70
-		Palette.palette: FLUKA
-		Palette.smooth: 0
 		Palette2._visible: True
 		Palette2.alphamin: 1
 		Palette2.cpd: 5
 		Palette2.max: 10000.0
 		Palette2.min: 0.01
+		Palette3: True
 		Palette3._visible: True
 		Palette3.alphamin: 1
-		Palette3.cpd: 10
-		Palette3.max: 10000.0
+		Palette3.cpd: 13
+		Palette3.max: 1000.0
 		Palette3.min: 1.0
-		Palette3.n: 40
+		Palette3.n: 39
 		Palette5._visible: True
+		Palette5.alphamin: 1
+		Palette5.cpd: 5
+		Palette5.max: 10000.0
+		Palette5.min: 1e-08
+		Palette5.n: 60
 		Show._visible: True
 		Show.lattice: 1
 		Show.voxel: 1
+		Usrbin: True
 		Usrbin._visible: True
 		Usrbin.alpha: 2
-		Usrbin.file: data_0412_51.bnn
-		Usrbin.norm: 3.807E21
-		Usrbin.palette: Palette
+		Usrbin.det: 5
+		Usrbin.file: HallA-PREX_run_50.bnn
+		Usrbin.norm: 1.57E8
+		Usrbin.palette: Palette3
 		deflights: 1
 		layer: 3D
 	End
@@ -1359,12 +1402,12 @@ Plot: Red
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 2662.33 1555.43
+	extends: 3833.76 2371.97
 	grid: 0
 	index: 0
 	labels: 1
 	layer: 3D
-	origin: 512.441 0 1892.75
+	origin: -1049.72 0 2903.21
 	subtype: Material
 	title: GeoViewer Red plot
 	x2log: 0
@@ -1381,14 +1424,14 @@ End
 Plot: Green
 	Format: .eps
 	Type:   Geometry
-	basisu: 0 -1 0
-	basisv: 0 0 -1
+	basisu: 0 0 1
+	basisv: 0 1 0
 	boundaries: 1
-	coord: Y-Z
-	extends: 23737.6 13882
+	coord: Z-Y
+	extends: 23737.6 850597
 	labels: 1
-	layer: Media
-	origin: 0 2521.04 -1663.98
+	layer: 3D
+	origin: 0 7387.8 8324.17
 	subtype: Material
 	title: GeoViewer Green plot
 End
@@ -1401,10 +1444,10 @@ Plot: Blue
 	basisv: 0 1 0
 	boundaries: 1
 	coord: Z-Y
-	extends: 4594.82 2679.93
+	extends: 298.229 184.516
 	labels: 1
 	layer: Media
-	origin: 0 -392.303 -1611.21
+	origin: 78.5995 1394.25 90.1251
 	subtype: Material
 	title: GeoViewer Blue plot
 End
@@ -1413,8 +1456,8 @@ End
 Plot: Magenta
 	Format: .eps
 	Type:   Geometry
-	basisu: -0.578718 0.0146769 0.815395
-	basisv: 0.197585 0.972573 0.122728
+	basisu: 0.366354 0.0106915 0.930414
+	basisv: 0.0335209 0.999133 -0.0246801
 	boundaries: 1
 	cbcolors: 0
 	cblog: 0
@@ -1423,12 +1466,12 @@ Plot: Magenta
 	cbtics: 0
 	coord: U-V
 	cpd: 0
-	extends: 2662.33 1554.34
+	extends: 28485.1 17649.3
 	grid: 0
 	index: 0
 	labels: 1
 	layer: 3D
-	origin: 433.087 588.134 -505.541
+	origin: -126.419 1155.14 6654.7
 	subtype: Material
 	title: GeoViewer Magenta plot
 	x2log: 0
@@ -2341,33 +2384,162 @@ Plot: MOLLER-hallA_52_plot
 	Format: .eps
 	Type:   USRBIN
 	axes: Auto
-	bxmax: 14000.
-	bxmin: -14000.
 	cbcolors: 30
 	cblog: 1
-	cbmax: 10000
-	cbmin: 1
+	cbmax: 1e8
+	cbmin: 10
 	cbpalette: FLUKA
 	cbround: 0
 	cbtics: 1
 	cpd: 0
-	datafile: data_0410_52.bnn
+	datafile: Data-bin1/HallA-PREX_run_52.bnn
 	det: 1
 	errors: 0
 	geo: -Auto-
 	grid: 0
 	hist: 2D Projection
 	index: 0
-	int: 101.04053035523482
+	int: 61.517840906274465
 	lw.0: 0
-	max: 1.26438182E-09
-	min: 3.34692417E-16
-	norm: 3.8E14
-	proj: X
+	max: 2.02243722E-10
+	min: 1.89103927E-17
+	norm: 2.6E17
+	proj: Y
 	ps.0: 0
 	pt.0: 0
 	swap: 0
 	title: USRBIN MOLLER-hallA 52
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN HallA-PREX run 50"
+Plot: HallA-PREX_run_50_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	bxmax: 20
+	bxmin: -220.
+	bymax: -60
+	bymin: -220.
+	bzmax: 2420.
+	bzmin: 2220.
+	cbcolors: 30
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: HallA-PREX_run_50.bnn
+	det: 5
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 3
+	int: 0.36376873111976232
+	lw.0: 0
+	max: 1.09139563E-07
+	min: 1.64753740E-08
+	norm: 1.57E8
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN HallA-PREX run 50
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN HallA-PREX run 51"
+Plot: HallA-PREX_run_51_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: HallA-PREX_run_51.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 3
+	int: 236.09369676989411
+	lw.0: 0
+	max: 2.55101386E-05
+	min: 1.33888262E-13
+	proj: Z
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN HallA-PREX run 51
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN HallA-PREX run 52"
+Plot: HallA-PREX_run_52_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: HallA-PREX_run_52.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 4
+	int: 62.279016323790302
+	lw.0: 0
+	max: 1.29878108E-10
+	min: 2.15248092E-16
+	norm: 2.6E17
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN HallA-PREX run 52
 	with.0: errorbars
 	x2log: 0
 	x2tics: 0
